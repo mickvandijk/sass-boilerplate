@@ -1,0 +1,29 @@
+/* REM to px
+========================================================================== */
+// calculate rems
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}rem;
+}
+
+/* Paddings
+========================================================================== */
+
+// padding top bottom
+@for $i from 0 through 10 {
+    .t-ptb-#{$i * 10} {
+        padding: rem($i * 10) 0;
+    }
+}
+
+
+/* Margins
+========================================================================== */
+
+// margin bottom
+@for $i from 0 through 20 {
+    .t-mb-#{$i * 10} {
+        margin-bottom: rem($i * 10);
+    }
+}

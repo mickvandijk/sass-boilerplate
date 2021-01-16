@@ -1,0 +1,30 @@
+/* Buttons
+========================================================================== */
+
+/*
+ * usage:
+ * @extend %btn;
+ */
+%btn {
+    padding: 10px;
+    color: $color-white;
+    curser: pointer;
+    border: none;
+    shadow: none;
+    text-align: center;
+    display: block;
+}
+
+/* Background image
+========================================================================== */
+
+/*
+ * usage:
+ * @extend %bg-image;
+ */
+%bg-image {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

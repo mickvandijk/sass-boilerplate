@@ -1,0 +1,9 @@
+/* Buttons > see base/placeholders for button styling
+========================================================================== */
+
+.btn {
+    &:hover,
+    &:focus {
+        background-color: darken($color-black, 10%);
+    }
+}
